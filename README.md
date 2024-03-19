@@ -31,13 +31,13 @@ Download the [Apollo Southbay](https://developer.apollo.auto/southbay.html) data
 
 #### Training one Submap
 
-For training a single model you can configure `config/config.yaml` and run `scripts_pose_tracking/train.py`. 
+For training a single model you can configure `config/config.yaml` and run `scripts_pose_tracking/train.py -c config/config.yaml`. 
 
-Registering a scan to the trained model can be done using  `scripts_pose_tracking/register_scan.py` while only visualizing the meshed result one can use `scripts_pose_tracking/mesh_it.py`.
+Registering a scan to the trained model can be done using  `python3 scripts_pose_tracking/register_scan.py -c experiments/refactor/lightning_logs/version_7/checkpoints/best.ckpt` while only visualizing the meshed result one can use `scripts_pose_tracking/mesh_it.py`.
 
 #### Training multiple key-poses
 
-For the training of multiple key-poses you can use the `config/config_mapping.yaml` file and run `scripts_pose_tracking/train.py -c config/config_mapping.yaml`.
+For the training of multiple key-poses you can use the `config/config_mapping.yaml` file and run `python3 scripts_pose_tracking/pose_tracking.py  experiments/pretrained_models/pose_tracking/checkpoints/*.ckpt `.
 
 Tracking the car pose in the trained submaps can be done using `python3 scripts/pose_tracking.py experiments/PATH-TO-THE-CHECKPOINTS/best-v*.ckpt -vis`.
 
