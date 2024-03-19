@@ -33,7 +33,7 @@ Download the [Apollo Southbay](https://developer.apollo.auto/southbay.html) data
 
 For training a single model you can configure `config/config.yaml` and run `scripts_pose_tracking/train.py -c config/config.yaml`. 
 
-Registering a scan to the trained model can be done using  `python3 scripts_pose_tracking/register_scan.py -c experiments/refactor/lightning_logs/version_7/checkpoints/best.ckpt` while only visualizing the meshed result one can use `scripts_pose_tracking/mesh_it.py`.
+Registering a scan to the trained model can be done using  `python3 scripts_pose_tracking/register_scan.py -c experiments/refactor/lightning_logs/version_7/checkpoints/best.ckpt` while only visualizing the meshed result one can use `python3 scripts_pose_tracking/mesh_it.py -c  experiments/refactor/lightning_logs/version_7/checkpoints/best.ckpt `.
 
 #### Training multiple key-poses
 
