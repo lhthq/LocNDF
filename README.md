@@ -39,7 +39,7 @@ Registering a scan to the trained model can be done using  `python3 scripts_pose
 
 For the training of multiple key-poses you can use the `config/config_mapping.yaml` file and run `python3 scripts_pose_tracking/train_mapping.py  -c config/config_mapping.yaml `.
 
-Tracking the car pose in the trained submaps can be done using `python3 scripts/pose_tracking.py experiments/PATH-TO-THE-CHECKPOINTS/best-v*.ckpt -vis`.
+Tracking the car pose in the trained submaps can be done using `python3 scripts_pose_tracking/pose_tracking.py experiments/PATH-TO-THE-CHECKPOINTS/best-v*.ckpt -vis`.
 
 Pretrained models can be downloaded [here](https://www.ipb.uni-bonn.de/html/projects/locndf/experiments.zip) and should be placed under `/experiments`. Those models can be used as explained above.
 
